@@ -36,26 +36,26 @@ if(typeOfCalculator == 1){
 	}
 } else {
 
-		calculatorChoice = prompt("Please choose which action you want: (1)Add, (2)Substract");
+	calculatorChoice = prompt("Please choose which action you want: (1)Addition - (2)Substraction - (3)Divison - (4)Multiplication - (5)Power - (6)Square Root");
 
 	if(calculatorChoice == 1){
-		addNumber = 10 + 20;
+		addNumber =  parseInt(numberOne) + parseInt(numberTwo);
 		alert(addNumber);
 	}else if(calculatorChoice == 2){
-		substractNumber = 5 - 2;
+		substractNumber = parseInt(numberOne) - parseInt(numberTwo);
 		alert(substractNumber);
 	}else if(calculatorChoice == 3){
-		divideNumber = 10 / 2;
+		divideNumber = parseInt(numberOne) / parseInt(numberTwo);
 		alert(divideNumber);
 	}else if(calculatorChoice == 4){
-		lastOperation = 5 * 5;
-		alert(lastOpration);
+		multiplication = parseInt(numberOne) * parseInt(numberTwo);
+		alert(multiplication);
 	}else if(calculatorChoice == 5){
-		oke = 4 ** 4;
-		alert("oke");
+		power = parseInt(numberOne) ** parseInt(numberTwo);
+		alert(power);
 	}else if(calculatorChoice == 6){
-		oke2 = 99 + 99;
-		alert(oke2);
+		SquareRoot = Math.sqrt(parseInt(numberOne)) + Math.sqrt(parseInt(numberTwo));
+		alert(SquareRoot);
 	}else{
 		alert("Incorrect input please choose a number from 1 to 6. Thank you!")
 	}
@@ -72,6 +72,7 @@ if(tripCalculatorChoice == 1){
 	userCostPerGallon = prompt("Please input Cost per Gallon:");
 	userSpeed = prompt("Please input your speed:")
 
+	alert("Feature Still In Progress")
 	if (userSpeed > 60 ){
 		userDistance = userDistance - 2; 
 	}
