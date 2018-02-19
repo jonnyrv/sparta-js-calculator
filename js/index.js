@@ -28,9 +28,11 @@ if(typeOfCalculator == 1){
 	}else if(calculatorChoice == 3){
 		divideNumber = 10 / 2;
 		alert(divideNumber);
-	}else{
+	}else if(calculatorChoice == 4){
 		lastOperation = 5 * 5;
 		alert(lastOpration);
+	}else{
+		alert("Incorrect input please choose a number from 1 to 4. Thank you!")
 	}
 } else {
 
@@ -54,6 +56,8 @@ if(typeOfCalculator == 1){
 	}else if(calculatorChoice == 6){
 		oke2 = 99 + 99;
 		alert(oke2);
+	}else{
+		alert("Incorrect input please choose a number from 1 to 6. Thank you!")
 	}
 }
 
