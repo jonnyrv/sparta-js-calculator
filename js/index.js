@@ -62,5 +62,17 @@ if(typeOfCalculator == 1){
 }
 
 
+alert("Thank you for using this calculator !!");
+tripCalculatorChoice = prompt("Do you want to use our trip calculator? : (1)Yes (2)No");
 
-alert("Thank you for using this calculator !!")
+
+if(tripCalculatorChoice == 1){
+	userDistance = prompt("Please input the distance you want to travel : ");
+	userFuel = prompt("Please input your fuel efficiency(mpg):");
+	userCostPerGallon = prompt("Please input Cost per Gallon:");
+	userSpeed = prompt("Please input your speed:")
+
+	if (userSpeed > 60 ){
+		userDistance = userDistance - 2; 
+	}
+}
