@@ -1,4 +1,4 @@
-alert("Hello To this Simple Calculator !!!");
+alert("Hello and Welcome To this Simple Calculator !!!");
 
 numberOne = prompt("Imput your first number:");
 numberTwo = prompt("Imput your second number:");
@@ -6,31 +6,31 @@ numberTwo = prompt("Imput your second number:");
 
 /* Condition to check if the input from user is correct */ 
 
-if(numberOne == NaN && numberTwo == NaN){
+if(isNaN(numberOne) && isNaN(numberTwo)){
 	alert("Incorrect input, please input number next time !!!");
 	throw("endThisPlease");
 }
 
 /* Actual Calculator */
 
-typeOfCalculator = prompt("What type of calculator do you want: (1)Normal, (2)Advanced");
+typeOfCalculator = prompt("What type of calculator do you want: (1)Normal - (2)Advanced");
 
 if(typeOfCalculator == 1){
 
-	calculatorChoice = prompt("Please choose which action you want: (1)Add, (2)Substract");
+	calculatorChoice = prompt("Please choose which action you want: (1)Addition - (2)Substraction - (3)Divison - (4)Multiplication");
 
 	if(calculatorChoice == 1){
-		addNumber =  10 + 20;
+		addNumber =  parseInt(numberOne) + parseInt(numberTwo);
 		alert(addNumber);
 	}else if(calculatorChoice == 2){
-		substractNumber = 5 - 2;
+		substractNumber = parseInt(numberOne) - parseInt(numberTwo);
 		alert(substractNumber);
 	}else if(calculatorChoice == 3){
-		divideNumber = 10 / 2;
+		divideNumber = parseInt(numberOne) / parseInt(numberTwo);
 		alert(divideNumber);
 	}else if(calculatorChoice == 4){
-		lastOperation = 5 * 5;
-		alert(lastOpration);
+		multiplication = parseInt(numberOne) * parseInt(numberTwo);
+		alert(multiplication);
 	}else{
 		alert("Incorrect input please choose a number from 1 to 4. Thank you!")
 	}
