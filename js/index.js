@@ -72,8 +72,8 @@ if(tripCalculatorChoice == 1){
 	userCostPerGallon = prompt("Please input Cost per Gallon:");
 	userSpeed = prompt("Please input your speed:")
 
-	alert("Feature Still In Progress")
+	alert("Feature Still In Progress. Please try again later !!!")
 	if (userSpeed > 60 ){
-		userDistance = userDistance - 2; 
+		userCostPerGallon = userCostPerGallon - 2; 
 	}
 }
